@@ -6,13 +6,12 @@
 	font-family: 'Open Sans', sans-serif;
 }
 body{
-	/*padding: 0 2.5%;*/
-	background: url(../img/background.png);
-	background-repeat: repeat;
-	/*background-size: cover;*/
-	background-position: center;
+
 }
-.header, .content, .main__news, .nav{
+/*.header, .content, .main__news, .nav{
+	padding: 0 2.5%;
+}*/
+body>*{
 	padding: 0 2.5%;
 }
 .header{
@@ -83,12 +82,15 @@ body{
 	-ms-flex-align: stretch;
 	    align-items: stretch;
 }
+
+
 .list__item{
 	text-transform: uppercase;
 	list-style: none;
 /*	display: inline-block;
 	vertical-align: top;*/
-	width: calc(100%/8);
+	/*width: calc(100%/8);*/
+	flex: 1;
 	text-align: center;
 	font-size: 1em;
 	transition: all .2s ease;
@@ -234,9 +236,11 @@ body{
 
 }
 .content__about{
-
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
 }
-.about__title, .services__title, .teams__title{
+/*.about__title, .services__title, .teams__title{
 	text-transform: uppercase;
 	display: inline-block;
 	vertical-align: middle;
@@ -255,7 +259,7 @@ body{
 	bottom: 0.1em;
 	margin-right: .3em;
 }
-.about__title:after, .services__title:after, .teams__title:after{
+.services__title:after, .teams__title:after{
 	content: url(../img/line45deg.png);
 	display: inline-block;
 	width: 40%;
@@ -318,7 +322,6 @@ body{
 }
 .description__picture{
 	width: 15%;
-	/*height: 100%;*/
 }
 .description__picture_img{
 	width: 3.5em;
@@ -345,7 +348,6 @@ body{
 }
 .description__text{
 	color: #525252;
-	/*padding: 0 0 0 2%;*/
 }
 .text__title{
 	font-size: 0.89em;
@@ -363,16 +365,120 @@ body{
 	background: #7e7e7e;
 
 }
-
-
-
-
-
-
-
-
-
-
+*/
+.about__title{
+	display: flex;
+	justify-content: flex-start;
+	align-items: stretch;
+	flex-wrap: nowrap;
+}
+.title__name{
+	text-transform: uppercase;
+	color: #7e7e7e;
+	font-size: 1.3em;
+	font-weight: 400;
+}
+.title__name:before{
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	width: 1em;
+	height: 1em;
+	background: #29c5e6;
+	position: relative;
+	bottom: 0.1em;
+	margin-right: .3em;
+}
+/*.about__title > *{
+	flex: 1;
+}*/
+.title__line{
+	background: url(../img/line45deg.png);
+	background-repeat: repeat;
+	background-position: left;
+	flex: 1;
+	margin: .3% 2%;
+}
+.about__text{
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-direction: row;
+}
+.text__pic, .description__picture{
+	flex: 1;
+	overflow: hidden;
+	align-self: stretch;
+	padding: 3px;
+}
+.text__pic_img, .description__picture_img{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	border: 1px solid transparent;
+	outline: 1px solid #c9c9c9;
+}
+.text__article{
+	flex: calc(460/140);
+	align-self: stretch;
+	padding: 0 2%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+.article__paragraph, .description__text_about-team{
+	color: #8f8f8f;
+	font-size: 1em;
+}
+.article__link, .article__name{
+	font-size: 1em;
+	text-decoration: underline;
+	color: #525252;
+	margin-top: 4%;
+}
+.article__name{
+	text-decoration: none;
+}
+.content__additional{
+	display: flex;
+	justify-content: flex-start;
+	align-items: stretch;
+}
+.content__additional > *{
+	flex: 1;
+}
+.teams__about{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: stretch;
+}
+.teams__about > *{
+	flex: 1;
+}
+.teams__description{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: stretch;
+}
+.description__text{
+	flex: 6;
+}
+.description__text_about-team, ..description__text_title{
+	font-size: .9em;
+}
+.description__text_title{
+	color: #525252;
+	font-size: .8em;
+	text-transform: uppercase;
+}
+.content__additional >*:last-child .title__line, .content >*:last-child .title__line{
+	margin-right: 0;
+}
 
 
 @media only screen and (max-width: 62em) {
