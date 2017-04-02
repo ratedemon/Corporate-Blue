@@ -11,7 +11,7 @@ body{
 /*.header, .content, .main__news, .nav{
 	padding: 0 2.5%;
 }*/
-body>*{
+.container-fluid>*{
 	padding: 0 2.5%;
 }
 .header{
@@ -168,6 +168,7 @@ body>*{
 	/*color: #acacac;*/
 	color: white;
 	text-shadow: 0px 0px 6px rgba(255,255,255,0.7), 0px 0px 2px #000000;
+	font-family: Tahoma;
 }
 .slider__banner{
 	border-bottom: 2px solid #e7e7e7;
@@ -432,6 +433,8 @@ body>*{
 .article__paragraph, .description__text_about-team{
 	color: #8f8f8f;
 	font-size: 1em;
+	font-family: Tahoma;
+	font-weight: lighter;
 }
 .article__link, .article__name{
 	font-size: 1em;
@@ -498,6 +501,78 @@ body>*{
 	max-height: 100%;
 	max-width: 100%;
 	fill: #e4e3e4;
+}
+.footer{
+	background: #7e7e7e;
+	padding: 1% 2.5% 0;
+	/*padding: 0 2.5%;*/
+}
+.footer > *{
+	padding-right: 2%;
+}
+.feed__title{
+	border-bottom: 1px solid #919191;
+	align-self: stretch;
+}
+.footer__feed{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+.feed__title_news{
+	font-family: 'Oswald', sans-serif;
+	font-size: 1em;
+	text-transform: uppercase;
+	color: white;
+	font-weight: 300;
+	/*padding: 1% 0;*/
+}
+.feed__data{
+	color: #b4aeae;
+	font-size: .8em;
+	text-decoration: underline;
+	font-family: Tahoma;
+}
+.feed__text{
+	color: #dbdbdb;
+	font-size: .9em;
+	font-family: Tahoma;
+	padding-right: 3%;
+}
+.footer__nav_list{
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: stretch;
+	flex-wrap: wrap;
+}
+.footer__nav_list > .nav__list_item{
+	width: 50%;
+	color: #dbdbdb;
+	font-size: .9em;
+	font-family: Tahoma;
+	text-transform: capitalize;
+	text-decoration: none;
+	padding: 1% 0;
+}
+.media__social{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+.social__top, .social__bottom{
+	display: flex;
+	justify-content: flex-start;
+	align-items:stretch;
+}
+.social__link{
+	flex: 1;
+}
+.social__link_img{
+	width: 100%;
+	border-radius: 20%;
 }
 @media only screen and (max-width: 62em) {
 	.header, .content, .main__news, .nav{
