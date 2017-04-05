@@ -3,13 +3,14 @@
 <head>
 	<title>Corporate Blue</title>
 	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/flexboxgrid.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">	
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/style1.css">
-	<link rel="stylesheet" href="css/flexboxgrid.css"><!-- 
-	<link rel="stylesheet" href="css/normalize.css"> -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
+	<script src="script/jquery-3.2.1.min.js" defer></script>
+	<script src="script/jquery.fancybox.min.js" defer></script>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
 </head>
@@ -47,7 +48,7 @@
 				<div class="title__line"></div>
 			</div>
 		</div>
-		<div class="main__sidebar col-xs-12 col-sm-3 col-md-3 col-lg-3">
+		<div class="main__sidebar col-xs-12 col-sm-12 col-md-3 col-lg-3">
 			<ul class="sidebar__menu">
 				<li class="menu__item"><a href="#" class="menu__item_link menu__item_link-active">Lorem ipsum.</a></li>
 				<li class="menu__item"><a href="#" class="menu__item_link">Lorem ipsum dolor.</a></li>
@@ -61,11 +62,11 @@
 					<h3 class="title__our">our office</h3>
 				</div>
 				<div class="office__pic">
-					<img src="img/1.jpg" alt="" class="office__pic_img">
+					<a href="img/1.jpg" data-fancybox><img src="img/1.jpg" alt="" class="office__pic_img"></a>
 				</div>
 			</div>
 		</div>
-		<div class="main__content col-xs-12 col-sm-9 col-md-9 col-lg-9">
+		<div class="main__content col-xs-12 col-sm-12 col-md-9 col-lg-9">
 			<div class="content__article">
 				<div class="article__title">
 					<h6 class="title__name">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores culpa, nam blanditiis dolorum unde eos repellendus molestiae quasi incidunt doloribus?"</h6>
@@ -75,15 +76,44 @@
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, aut pariatur labore suscipit odit cupiditate quidem corporis tempora dicta excepturi magnam cum ut blanditiis quas omnis molestias! Quasi, culpa, dicta. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis fugit nemo expedita illo saepe mollitia ab consequatur ea vel quaerat illum rerum eaque delectus, asperiores voluptatum, officiis, veniam corrupti repellendus. Ad possimus eveniet officiis labore quos explicabo laboriosam consectetur dicta. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 				</p>
 				<div class="article__pictures">
-					<img src="img/1.jpg" alt="" class="pictures__img">
-					<img src="img/2.jpg" alt="" class="pictures__img">
+					<a href="img/1.jpg" data-fancybox="gallery" data-fancybox="group" data-caption="Caption #1"><img src="img/1.jpg" alt="" class="pictures__img"></a>
+					<a href="img/2.jpg" data-fancybox="gallery" data-fancybox="group" data-caption="Caption #2"><img src="img/2.jpg" alt="" class="pictures__img"></a>
 				</div>
 			</div>
 			<div class="content__our-team">
 				<div class="our-team__title">
 					<h6 class="title__name">Our team</h6>
 				</div>
-				<div class="out-team__family">
+				<div class="our-team__family">
+					<div class="family__item">
+						<img src="img/5.jpg" alt="" class="item__img">
+						<a href="#" class="item__contacts">John Doe</a>
+						<span class="item__expert">ceo</span>
+					</div>
+
+					<div class="family__item">
+						<img src="img/5.jpg" alt="" class="item__img">
+						<a href="#" class="item__contacts">John Doe</a>
+						<span class="item__expert">ceo</span>
+					</div>
+
+					<div class="family__item">
+						<img src="img/5.jpg" alt="" class="item__img">
+						<a href="#" class="item__contacts">John Doe</a>
+						<span class="item__expert">ceo</span>
+					</div>
+
+					<div class="family__item">
+						<img src="img/5.jpg" alt="" class="item__img">
+						<a href="#" class="item__contacts">John Doe</a>
+						<span class="item__expert">ceo</span>
+					</div>
+
+					<div class="family__item">
+						<img src="img/5.jpg" alt="" class="item__img">
+						<a href="#" class="item__contacts">John Doe</a>
+						<span class="item__expert">ceo</span>
+					</div>
 					<div class="family__item">
 						<img src="img/5.jpg" alt="" class="item__img">
 						<a href="#" class="item__contacts">John Doe</a>
@@ -171,6 +201,5 @@
 		</div>
 	</footer>
 </div>
-<!-- <script src="script/script.js"></script> -->
 </body>
 </html>

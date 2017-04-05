@@ -50,9 +50,9 @@ body{
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
-	-ms-flex-pack: start;
-	    -webkit-justify-content: flex-start;
-	        justify-content: flex-start;
+	-ms-flex-pack: end;
+	    -webkit-justify-content: flex-end;
+	        justify-content: flex-end;
 	-ms-flex-align: stretch;
 	    -webkit-align-items: stretch;
 	        align-items: stretch;
@@ -794,6 +794,7 @@ body{
 		height: auto;
 		visibility: visible;
 		transform: translateX(0%);
+		transition: all .4s ease, transform .2s ease;
 	}
 	.logo__title{
 		text-align: center;
@@ -891,6 +892,9 @@ body{
 		-ms-order: 0;
 		-o-order: 0;
 		order: 0;
+	}
+	.footer__nav {
+		display: none;
 	}
 	.media__social{
 		flex-direction: column;
