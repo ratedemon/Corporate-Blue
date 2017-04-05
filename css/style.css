@@ -36,7 +36,7 @@ body{
 	font-weight: 400;
 }
 .logo__title_link{
-	margin: .27% 1.8%;
+	margin: .27% 2.5%;
 }
 .logo__square{
 	width: 1em;
@@ -800,7 +800,7 @@ body{
 		text-align: center;
 	}
 	.logo__square{
-		left: 25%;
+		left: 23%;
 	}
 	.header__search{
 		width: 100%;
@@ -830,7 +830,7 @@ body{
 		align-items: flex-end;
 	}
 	.footer__nav{
-		/*display: none;*/
+		display: none;
 		visibility: visible;
 		width: 0;
 	}
